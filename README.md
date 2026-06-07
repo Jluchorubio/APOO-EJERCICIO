@@ -246,15 +246,3 @@ Importante: el endpoint de actualizar debe usar el id en la URL:
 ```text
 PUT http://localhost:8089/estudiantes/1
 ```
-
-## Estado actual del proyecto
-
-El proyecto compila correctamente con Maven.
-
-Para que la aplicacion arranque y responda peticiones, MySQL debe estar activo en `localhost:3306`, debe existir la base de datos `grupo01` y debe existir la tabla `estudiante`.
-
-Si MySQL no esta disponible, Spring Boot falla al iniciar con un error de conexion similar a:
-
-```text
-Communications link failure
-```
