@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "2f42a46d-7802-4c66-9053-60aa46ec92e2",
+    "name": "Api-Estudiantes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "368755"
+  },
+  "item": [
+    {
+      "name": "CrearEstudiante",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 0,\r\n    \"nombres\": \"Carlos Medina\",\r\n    \"correo\": \"carlos@yopmail.com\",\r\n    \"numeroTelefono\": \"3107265423\",\r\n    \"carrera\": \"Sistemas\",\r\n    \"direccion\": \"carrera 6\",\r\n    \"semestre\": \"V\",\r\n    \"activo\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8089/estudiantes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "estudiantes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ActualizarEstudiante",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2,\r\n    \"nombres\": \"Carlos Medina\",\r\n    \"correo\": \"carlos.medina@yopmail.com\",\r\n    \"numeroTelefono\": \"3127265423\",\r\n    \"carrera\": \"Sistemas\",\r\n    \"direccion\": \"carrera 6\",\r\n    \"semestre\": \"VIII\",\r\n    \"activo\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8089/estudiantes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "estudiantes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ObtenerTodosEstudiantes",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8089/estudiantes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8089",
+          "path": [
+            "estudiantes"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
